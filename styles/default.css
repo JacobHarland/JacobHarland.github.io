@@ -1,0 +1,156 @@
+:root {
+    --header-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ec0fda3c-e07d-4092-9fa0-28b3f76eaa7e/de0n3g9-9f6cbf39-450a-4502-86c8-a60be2d4aba0.png/v1/fill/w_1192,h_670,q_70,strp/wallpaper_cosmere_roshar_3840x2160_by_giuz09_de0n3g9-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvZWMwZmRhM2MtZTA3ZC00MDkyLTlmYTAtMjhiM2Y3NmVhYTdlXC9kZTBuM2c5LTlmNmNiZjM5LTQ1MGEtNDUwMi04NmM4LWE2MGJlMmQ0YWJhMC5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.Ov1YeuANhFM4h3g-FrtEY5mFJ97pOBwywTL_CQATKqM');
+    --content: #43256E;
+    --nav-bg: #101d28;
+    --text: #9db8d3;
+    --side-bg: #182a3a;
+    --main-bg: #253f58;
+}
+
+/*Place holder text I found. Looking for something cloudy, airy or wispy currently*/
+
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
+    font-style: italic;
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    background-color: #e3e4ff;
+    color: #eaebff;
+    background-image: var(--body-bg-image);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#container a {
+    color: var(--text);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#header {
+    width: 100%;
+    height: 150px;
+    background-image: var(--header-image);
+    background-size: 100%;
+}
+
+#header h1 {
+    margin: 0;
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+    display: table;
+    background-color: var(--nav-bg);
+}
+
+#navbar {
+    height: 40px;
+    background-color: var(--nav-bg);
+    width: 100%;
+}
+
+#navbar ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+#navbar li {
+    padding-top: 10px;
+}
+
+#navbar li a {
+    color: var(--text);
+    font-weight: 800;
+    text-decoration: none;
+}
+
+#navbar li a:hover {
+    color: #9ca1ba;
+    text-decoration: underline;
+}
+
+#flex {
+    display: flex;
+}
+
+aside {
+    background-color: var(--side-bg);
+    width: 200px;
+    padding: 20px;
+    font-size: smaller;
+}
+
+main {
+    background-color: var(--main-bg);
+    flex: 1;
+    padding: 20px;
+    order: 2;
+}
+
+*/ #leftSidebar {
+    order: 1;
+}
+
+footer {
+    background-color: var(--nav-bg);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--text);
+}
+
+h1 {
+    font-size: 25px;
+}
+
+strong {
+    color: var(--text);
+}
+
+.box {
+    background-color: var(--nav-bg);
+    border: 1px solid var(--text);
+    padding: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
