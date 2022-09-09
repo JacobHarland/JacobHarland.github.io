@@ -5,30 +5,154 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="/styles/default.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="/styles/default.css" /> -->
   <title>Harland &#9674; ART</title>
   <script src="/itis3135/scripts/load.js"></script>
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+      margin: 0;
+      background-color: #FAF9F6;
+    }
+
+    .image-list {
+      --gap: 16px;
+      --num-cols: 4;
+      --row-height: 300px;
+
+      box-sizing: border-box;
+      padding: var(--gap);
+
+      display: grid;
+      grid-template-columns: repeat(var(--num-cols), 1fr);
+      grid-auto-rows: var(--row-height);
+      gap: var(--gap);
+    }
+
+    .image-list>img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .image-list-col-2 {
+      grid-column: span 2;
+    }
+
+    .image-list-row-2 {
+      grid-row: span 2;
+    }
+
+    #header {
+      padding-top: 5px;
+      width: 100%;
+      height: 30px;
+      background-size: 100%;
+      background-color: black;
+      color: white;
+    }
+
+    #header h1,
+    p {
+      margin: 0;
+      width: 100%;
+      padding: 0px;
+      text-align: center;
+      display: table;
+    }
+
+    footer {
+      padding-top: 5px;
+      width: 100%;
+      height: 30px;
+      background-size: 100%;
+      background-color: black;
+      color: white;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+    }
+
+
+    @media screen and (max-width: 1024px) {
+      .image-list {
+        --num-cols: 2;
+        --row-height: 200px;
+      }
+
+    }
+  </style>
 </head>
 
 <body>
-
   <div id="container">
     <div id="headerArea">
-      <div id="header" style="height: 242px;">
+      <div id="header" style="height: 40px;">
         <h1>Harland Art</h1>
       </div>
-      <nav id="navbar" style="margin-bottom: 10px;"></nav>
     </div>
-
     <div id="flex">
       <main>
-        <h2>Activity #3 - HTML Form</h2>
-        <p>Please fill out this form with the required information</p>
-
+        <div class="image-list">
+          <img class="image-list-col-2" class="image-list-row-2"
+            src="https://cdnb.artstation.com/p/assets/images/images/044/093/171/large/oksana-dobrovolska-screenshot-16.jpg?1639065876"
+            alt="Gilded Hall">
+          <img
+            src="https://cdnb.artstation.com/p/assets/images/images/042/448/593/large/oksana-dobrovolska-snow-dragon-final.jpg?1634561053"
+            alt="Snow Dragon">
+          <img
+            src="https://cdna.artstation.com/p/assets/images/images/045/423/788/large/oksana-dobrovolska-untitled.jpg?1642685578"
+            alt="Mystical Light">
+          <img
+            src="https://cdnb.artstation.com/p/assets/images/images/046/316/579/large/oksana-dobrovolska-flooded-planet.jpg?1644839375"
+            alt="Flooded Planet">
+          <img
+            src="https://cdna.artstation.com/p/assets/images/images/046/150/826/large/oksana-dobrovolska-4.jpg?1644417556"
+            alt="Flying Castle">
+          <img
+            src="https://cdna.artstation.com/p/assets/images/images/034/906/374/large/oksana-dobrovolska-12.jpg?1613567038"
+            alt="White Lands">
+          <img
+            src="https://cdna.artstation.com/p/assets/images/images/037/377/606/large/oksana-dobrovolska-eye-of-the-gods2.jpg?1620223194"
+            alt="Eye Of The Gods">
+          <img
+            src="https://cdnb.artstation.com/p/assets/images/images/032/740/107/large/oksana-dobrovolska-mood2.jpg?1660717115"
+            alt="Unicorn">
+          <img
+            src="https://cdna.artstation.com/p/assets/images/images/048/521/254/large/oksana-dobrovolska-beast-recovered.jpg?1650279046"
+            alt="Slain Beast">
+          <img
+            src="https://cdna.artstation.com/p/assets/images/images/050/366/778/large/oksana-dobrovolska-misty-mountain.jpg?1654685639"
+            alt="Misty Mountain">
+          <img class="image-list-row-2"
+            src="https://cdnb.artstation.com/p/assets/images/images/049/512/901/large/oksana-dobrovolska-asset.jpg?1652692071"
+            alt="Holy Lady Knight">
+          <img
+            src="https://cdnb.artstation.com/p/assets/images/images/052/533/837/large/oksana-dobrovolska-flyingcastle.jpg?1660052611"
+            alt="Dragon Castle">
+          <img
+            src="https://cdnb.artstation.com/p/assets/images/images/051/530/511/large/oksana-dobrovolska-old-arc2.jpg?1657544013"
+            alt="Old Ruins">
+          <img
+            src="https://cdna.artstation.com/p/assets/images/images/051/811/390/large/oksana-dobrovolska-shining-water.jpg?1658236063"
+            alt="JellyFish Magic">
+        </div>
+        <p>
+          All credit of the art goes to <a href="https://www.artstation.com/dabrosha">Oksana Dobrovolska</a>
+        </p>
       </main>
-
     </div>
-    <footer id="footer" style="margin-top: 10px;"></footer>
+    <footer style="margin-top: 10px;">
+      <div>
+        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+          <img src="/itis3135/images/button-validation-html5.png" width="88" height="31" alt="Validate webpage HTML." />
+        </a>
+
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_html">
+          <img src="/itis3135/images/button-validation-css.png" width="88" height="31" alt="Validate webpage CSS." />
+        </a>
+      </div>
+    </footer>
   </div>
 </body>
 
