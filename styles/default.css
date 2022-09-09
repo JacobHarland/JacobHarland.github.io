@@ -167,3 +167,69 @@ figure tbody:nth-child(odd) {
 figure {
     margin: auto;
 }
+
+input {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: var(--side-bg);
+    color: var(--text);
+    display: block;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    border-color: var(--text);
+    min-width: 300px;
+}
+
+option,
+select {
+    background-color: var(--side-bg);
+    color: var(--text);
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+
+input {
+    border: 1px solid var(--side-bg);
+    background-color: var(--side-bg);
+    color: var(--text);
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+fieldset {
+    border: none;
+    border-bottom: 3px solid var(--text);
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+}
+
+form {
+    width: 100vw;
+    max-width: 600px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}

@@ -23,7 +23,38 @@
     <div id="flex">
       <aside id="leftSidebar" style="margin-right: 10px;"></aside>
       <main>
-        <h1>Form</h1>
+        <h2>Activity #3 - HTML Form</h2>
+        <p>Please fill out this form with the required information</p>
+        <form>
+          <fieldset>
+            <label for="name">Enter Your Full Name: <input id="name" name="name" type="text" placeholder="John Doe"
+                autocomplete="off" required /></label>
+            <label for="phonenumber">Enter Your Phone Number<input id="phonenumber" type="tel"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="(123)-456-7890" autocomplete="off" required /></label>
+            <label for="email">Enter Your Email: <input id="email" name="email" type="email"
+                placeholder="Johndoe@email.com" autocomplete="off" required /></label>
+          </fieldset>
+          <fieldset>
+            <label for="radio"><input id="radio" name="radio" type="radio" class="inline"> Sketch</label>
+            <label for="radio"><input id="radio" name="radio" type="radio" class="inline"> Full drawing</label>
+            <label for="radio"><input id="radio" name="radio" type="radio" class="inline"> Full drawing + color</label>
+            <label for="select">Size <select name="select" id="select" required>
+                <option value="">Select One</option>
+                <option value="1">10" x 8"</option>
+                <option value="2">10" x 14"</option>
+                <option value="3">12" x 12"</option>
+                <option value="4">24" x 12"</option>
+              </select></label>
+          </fieldset>
+          <fieldset>
+            <label for="checkbox"><input id="checkbox" name="checkbox" type="checkbox" required class="inline"> Agree to
+              my rights to use your drawing as advertisment?</label>
+            <label for="checkbox"> <input id="checkbox" name="checkbox" type="checkbox" class="inline"> Subscribe to
+              newsletter?</label>
+          </fieldset>
+          <input type="reset" value="Reset" />
+          <input type="submit" value="Submit" />
+        </form>
 
       </main>
 
