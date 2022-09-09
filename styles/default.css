@@ -152,6 +152,7 @@ strong {
     background-color: var(--nav-bg);
     border: 1px solid var(--text);
     padding: 10px;
+    border-radius: 10px;
 }
 
 img {
