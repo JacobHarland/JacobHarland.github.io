@@ -78,50 +78,83 @@
           </tr>
         </table>
 
-
-        <h3>Employee Data in Complex Table</h3>
-        <table>
-          <tr>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Years of Service</th>
-          </tr>
-          <tr>
-            <td>Jacob Harland</td>
-            <td>jharlan3@uncc.edu</td>
-            <td>25</td>
-          </tr>
-          <tr>
-            <td>Joe Chapman</td>
-            <td>jchapman1@gmail.com</td>
-            <td>10</td>
-          </tr>
-          <tr>
-            <td>Kevin Donald</td>
-            <td>kdonald@gmail.com</td>
-            <td>10</td>
-          </tr>
-          <tr>
-            <td>Katie Samson</td>
-            <td>ksamson@gmail.com</td>
-            <td>13</td>
-          </tr>
-          <tr>
-            <td>Ramon Mclain</td>
-            <td>rmclain@gmail.com</td>
-            <td>2</td>
-          </tr>
-          <tr>
-            <td>David Patrick</td>
-            <td>dpatrick@gmail.com</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>Abby Powers</td>
-            <td>apowers@gmail.com</td>
-            <td>7</td>
-          </tr>
-        </table>
+        <figure>
+          <h3>Employee Data in Complex Table</h3>
+          <table>
+            <thead>
+              <tr class="table-header">
+                <th>Position</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Years of Service</th>
+                <th>Salary</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Manager</td>
+                <td>Jacob Harland</td>
+                <td>jharlan3@uncc.edu</td>
+                <td>25</td>
+                <td>$150,00</td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td rowspan="2">Engineer</td>
+                <td>Joe Chapman</td>
+                <td>jchapman1@gmail.com</td>
+                <td>10</td>
+                <td>$80,000</td>
+              </tr>
+              <tr>
+                <td>Kevin Donald</td>
+                <td>kdonald@gmail.com</td>
+                <td>10</td>
+                <td>$80,000</td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td>Senior Engineer</td>
+                <td>Katie Samson</td>
+                <td>ksamson@gmail.com</td>
+                <td>13</td>
+                <td>$90,000</td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td rowspan="2">Customer Service</td>
+                <td>Ramon Mclain</td>
+                <td>rmclain@gmail.com</td>
+                <td>2</td>
+                <td>$50,000</td>
+              </tr>
+              <tr>
+                <td>David Patrick</td>
+                <td>dpatrick@gmail.com</td>
+                <td>1</td>
+                <td>$40,000</td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td>Finance</td>
+                <td>Abby Powers</td>
+                <td>apowers@gmail.com</td>
+                <td>7</td>
+                <td>$70,000</td>
+              </tr>
+            </tbody>
+            <tr>
+              <th colspan="3">Total Years of Service</th>
+              <td>68</td>
+              <td>$560,000</td>
+            </tr>
+          </table>
+          <figcaption>Employee Information</figcaption>
+        </figure>
 
       </main>
 

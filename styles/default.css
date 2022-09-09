@@ -154,3 +154,16 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+.table-header {
+    background-color: var(--nav-bg);
+}
+
+figure tbody:nth-child(odd) {
+    background-color: var(--side-bg);
+    color: var(--text);
+}
+
+figure {
+    margin: auto;
+}
