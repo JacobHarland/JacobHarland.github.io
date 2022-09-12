@@ -1,5 +1,5 @@
 window.onload = () => {
-    fetch('/itis3135/components/nav.html')
+    fetch('components/nav.html')
         .then(data => {
             return data.text()
         })
@@ -7,7 +7,7 @@ window.onload = () => {
             document.getElementById("navbar").innerHTML = data;
         })
 
-    fetch('/itis3135/components/sidebar.html')
+    fetch('components/sidebar.html')
         .then(data => {
             return data.text()
         })
@@ -15,7 +15,7 @@ window.onload = () => {
             document.getElementById("leftSidebar").innerHTML = data;
         })
 
-    fetch('/itis3135/components/footer.html')
+    fetch('components/footer.html')
         .then(data => {
             return data.text()
         })
