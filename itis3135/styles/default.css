@@ -144,6 +144,10 @@ h1 {
     font-size: 25px;
 }
 
+h2 {
+    text-align: center;
+}
+
 strong {
     color: var(--text);
 }
