@@ -12,17 +12,21 @@
 
 <body>
 
-  
+
   <div id="container">
     <div id="headerArea">
       <header>
         <h1>Jacob Harland's Jolly Hydra &#128126; ITIS3135</h1>
       </header>
-      <nav id="navbar"></nav>
+      <nav class="main-nav">
+        <div data-include="components/nav.html"></div>
+      </nav>
     </div>
 
     <div id="flex">
-      <aside id="leftSidebar"></aside>
+      <aside>
+        <div data-include="components/sidebar.html"></div>
+      </aside>
       <main>
         <h2>Introducing Jacob Harland!!!</h2>
         <p><small>Taken from the markdown assignment</small></p>
@@ -43,7 +47,7 @@
             <p>PROGRAMMING/SOFTWARE: Python, Java, SQL, etc</p>
           </li>
           <li>
-            CLASSES: 
+            CLASSES:
           </li>
           <li>ITIS-3130-091-Human-Centered Design</li>
           <li>Fall 2022-ITIS-3135-091-Web App Design and Development</li>
@@ -66,8 +70,11 @@
       </main>
 
     </div>
-    <footer id="footer"></footer>
+    <footer>
+      <div data-include="components/footer.html"></div>
+    </footer>
   </div>
+  <script src="scripts/HTMLInclude.min.js"></script>
 </body>
 
 </html>

@@ -108,7 +108,7 @@ header h1 {
     background-color: var(--nav-bg);
 }
 
-#navbar {
+.main-nav {
     height: 40px;
     background-color: var(--nav-bg);
     width: 100%;
@@ -116,7 +116,7 @@ header h1 {
 
 }
 
-#navbar ul {
+.main-nav ul {
     display: flex;
     padding: 0;
     margin: 0;
@@ -124,11 +124,11 @@ header h1 {
     justify-content: space-evenly;
 }
 
-#navbar li {
+.main-nav li {
     padding-top: 10px;
 }
 
-#navbar {
+.main-nav {
     color: var(--text);
     font-weight: 800;
     text-decoration: none;
@@ -143,9 +143,6 @@ aside {
     font-size: smaller;
     border-radius: 8px 8px 8px 8px;
     box-shadow: 0px 0px 5px 2.5px rgba(0, 0, 0, 0.38);
-}
-
-#leftSidebar {
     order: 1;
     margin-right: 10px;
 }
