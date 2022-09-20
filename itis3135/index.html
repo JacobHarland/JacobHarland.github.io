@@ -27,7 +27,8 @@
       </aside>
       <main>
         <h2>Home</h2>
-        <p>Thanks for taking the time to look at my website! Enjoy your stay and expect consistent updates over the next few months.</p>
+        <p>Thanks for taking the time to look at my website! Enjoy your stay and expect consistent updates over the next
+          few months.</p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure voluptates eius aliquid officia quo. Repellat
           ex maiores, mollitia architecto aspernatur sunt dolorem ratione. Quam maxime atque, magni, fuga consectetur
           aspernatur ratione voluptate perspiciatis hic, quibusdam cupiditate veritatis! Laborum, modi quibusdam atque,
@@ -45,9 +46,15 @@
       <div data-include="components/footer.html"></div>
     </footer>
   </div>
-  
-    <script src="scripts/HTMLInclude.min.js"></script>
-    <script src="scripts/default.js"></script>
+
+  <script src="scripts/HTMLInclude.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      console.log("DOM DONE")
+      document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+      document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    });
+  </script>
 </body>
 
 </html>
