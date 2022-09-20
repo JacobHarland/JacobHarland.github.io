@@ -8,7 +8,7 @@
 }
 
 /*Place holder text I found. Looking for something cloudy, airy or wispy currently*/
-
+/* || Typography */
 @font-face {
     font-family: Nunito;
     src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
@@ -33,6 +33,11 @@
     font-weight: bold;
 }
 
+/* || General Styles */
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Nunito', sans-serif;
     margin: 0;
@@ -41,8 +46,27 @@ body {
     background-image: var(--body-bg-image);
 }
 
-* {
-    box-sizing: border-box;
+main {
+    background-color: var(--main-bg);
+    flex: 1;
+    padding: 20px;
+    order: 2;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px 2.5px rgba(0, 0, 0, 0.38);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--text);
+}
+
+h1 {
+    font-size: 25px;
+}
+
+#flex {
+    display: flex;
 }
 
 #container {
@@ -50,6 +74,7 @@ body {
     margin: 0 auto;
 }
 
+/* || Links */
 #container a {
     color: var(--text);
     font-weight: bold;
@@ -61,18 +86,17 @@ body {
     text-decoration: underline;
 }
 
+/* || Header and Main Navigation */
 header {
     width: 100%;
     background-image: var(--header-image);
     background-size: 100%;
     height: 242px;
-
 }
 
 #headerArea {
     box-shadow: 0px 0px 5px 2.5px rgba(0, 0, 0, 0.38);
     border-radius: 0px 0px 10px 10px;
-
 }
 
 header h1 {
@@ -111,10 +135,7 @@ header h1 {
     margin-bottom: 10px;
 }
 
-#flex {
-    display: flex;
-}
-
+/* || Sidebar */
 aside {
     background-color: var(--side-bg);
     width: 200px;
@@ -122,6 +143,11 @@ aside {
     font-size: smaller;
     border-radius: 8px 8px 8px 8px;
     box-shadow: 0px 0px 5px 2.5px rgba(0, 0, 0, 0.38);
+}
+
+#leftSidebar {
+    order: 1;
+    margin-right: 10px;
 }
 
 .profile-picture {
@@ -137,20 +163,7 @@ aside {
     width: 100px;
 }
 
-main {
-    background-color: var(--main-bg);
-    flex: 1;
-    padding: 20px;
-    order: 2;
-    border-radius: 8px;
-    box-shadow: 0px 0px 5px 2.5px rgba(0, 0, 0, 0.38);
-}
-
-#leftSidebar {
-    order: 1;
-    margin-right: 10px;
-}
-
+/* || Footer */ 
 footer {
     background-color: var(--nav-bg);
     width: 100%;
@@ -162,32 +175,7 @@ footer {
     box-shadow: 0px 0px 5px 2.5px rgba(0, 0, 0, 0.38);
 }
 
-h1,
-h2,
-h3 {
-    color: var(--text);
-}
-
-h1 {
-    font-size: 25px;
-}
-
-strong {
-    color: var(--text);
-}
-
-.box {
-    background-color: var(--nav-bg);
-    border: 1px solid var(--text);
-    padding: 10px;
-    border-radius: 8px;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
+/* || Form Page */
 .table-header {
     background-color: var(--nav-bg);
 }
@@ -271,6 +259,7 @@ form {
     color: var(--text);
 }
 
+/* || Utilities */
 @media (max-width: 767px) {
     aside {
         display: none;
