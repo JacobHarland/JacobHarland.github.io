@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles/default.css" />
+  <title>Jacob Harland's Jolly Hydra &#128126; ITIS3135 &#128126; First JavaScripts</title>
+  <script src="scripts/default.js"></script>
+  <script src="scripts/defaultscripts.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="header-area">
+      <header>
+        <h1>Jacob Harland's Jolly Hydra &#128126; ITIS3135</h1>
+      </header>
+      <nav class="main-nav">
+        <div data-include="components/nav.html"></div>
+      </nav>
+    </div>
+
+    <div class="flex">
+      <aside>
+        <div data-include="components/sidebar.html"></div>
+      </aside>
+      <main>
+        <h2>First JavaScripts</h2>
+        <h3 id="time"></h3>
+        <h3 id="greeting"></h3>
+        <button onclick="myAlert()">ALERT</button>
+
+        <form>
+          <fieldset>
+            <label for="fullName">Enter your name:
+              <input id="fullName" name="fullName" type="text" placeholder="John Doe" autocomplete="off" required>
+            </label>
+            <label for="feeling">How are you feeling?
+              <input id="feeling" name="feeling" type="text" placeholder="Best I've ever been!" autocomplete="off"
+                required>
+            </label>
+          </fieldset>
+          <input type="button" value="Submit" id="submit" onclick="myGreeting()" />
+        </form>
+
+        <form>
+          <input type="button" value="Celsius To Fahrenheit Calculator" onclick="celsiusToFahrenheit()" />
+          <fieldset>
+            <label for="hydraHeads">Enter the number of heads you will cut off the hydra!
+              <input id="hydraHeads" name="hydraHeads" type="text" autocomplete="off" required>
+            </label>
+            <input type="button" value="Slay the HYDRAAAA" id="slayHydra" onclick="myHydraHeads()" />
+            <p id="HydraHeadsOutput"></p>
+          </fieldset>
+        </form>
+
+        <form>
+          <fieldset>
+            <label for="length">Enter length:
+              <input id="length" name="length" type="text" placeholder="5" autocomplete="off" required>
+            </label>
+            <label for="width">Enter width:
+              <input id="width" name="width" type="text" placeholder="10" autocomplete="off" required>
+            </label>
+          </fieldset>
+          <input type="button" value="Find the area of a rectangle" onclick="areaFinder()" />
+          <p id="area"></p>
+        </form>
+
+      </main>
+
+    </div>
+    <footer>
+      <div data-include="components/footer.html"></div>
+    </footer>
+  </div>
+  <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+
+</html>
