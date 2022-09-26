@@ -1,4 +1,4 @@
-<div>
+<footer>
   <p id="footerparagraph">
     Designed by <a href="harland.art/">HarlandArt</a> &copy; 2022
   </p>
@@ -9,4 +9,9 @@
   <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
     <img src="images/button-validation-css.png" width="88" height="31" alt="Validate webpage CSS." />
   </a>
-</div>
+
+  <script>
+    document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+    document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+  </script>
+</footer>
