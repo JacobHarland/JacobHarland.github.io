@@ -13,8 +13,8 @@
 
 <body>
 
-  <div class="container"> 
-        <div data-include="components/nav.html"></div>
+  <div class="container">
+    <div data-include="components/nav.html"></div>
     <div class="flex">
       <aside>
         <div data-include="components/sidebar.html"></div>
@@ -23,9 +23,9 @@
         <h2>First JavaScripts</h2>
         <h3 id="time"></h3>
         <h3 id="greeting"></h3>
-        <button onclick="myAlert()">ALERT</button>
 
         <form>
+          <fieldset><input type="button" onclick="myAlert()" value="ALERT BUTTON"></fieldset>
           <fieldset>
             <label for="fullName">Enter your name:
               <input id="fullName" name="fullName" type="text" placeholder="John Doe" autocomplete="off" required>
@@ -34,12 +34,13 @@
               <input id="feeling" name="feeling" type="text" placeholder="Best I've ever been!" autocomplete="off"
                 required>
             </label>
+            <input type="button" value="Submit" id="submit" onclick="myGreeting()" />
           </fieldset>
-          <input type="button" value="Submit" id="submit" onclick="myGreeting()" />
-        </form>
 
-        <form>
-          <input type="button" value="Celsius To Fahrenheit Calculator" onclick="celsiusToFahrenheit()" />
+          <fieldset>
+            <input type="button" value="Celsius To Fahrenheit Calculator" onclick="celsiusToFahrenheit()" />
+          </fieldset>
+
           <fieldset>
             <label for="hydraHeads">Enter the number of heads you will cut off the hydra!
               <input id="hydraHeads" name="hydraHeads" type="text" autocomplete="off" required>
@@ -47,9 +48,7 @@
             <input type="button" value="Slay the HYDRAAAA" id="slayHydra" onclick="myHydraHeads()" />
             <p id="HydraHeadsOutput"></p>
           </fieldset>
-        </form>
 
-        <form>
           <fieldset>
             <label for="length">Enter length:
               <input id="length" name="length" type="text" placeholder="5" autocomplete="off" required>
@@ -57,15 +56,16 @@
             <label for="width">Enter width:
               <input id="width" name="width" type="text" placeholder="10" autocomplete="off" required>
             </label>
+            <input type="button" value="Find the area of a rectangle" onclick="areaFinder()" />
+            <p id="area"></p>
           </fieldset>
-          <input type="button" value="Find the area of a rectangle" onclick="areaFinder()" />
-          <p id="area"></p>
+
         </form>
 
       </main>
 
     </div>
-      <div data-include="components/footer.html"></div>
+    <div data-include="components/footer.html"></div>
   </div>
   <script src="scripts/HTMLInclude.min.js"></script>
 </body>

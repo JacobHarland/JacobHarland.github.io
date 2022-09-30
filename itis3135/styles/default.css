@@ -223,7 +223,8 @@ input {
 }
 
 input[type="submit"],
-input[type="reset"] {
+input[type="reset"],
+input[type="button"] {
     background-color: var(--side-bg);
     color: var(--text);
     display: block;
@@ -232,6 +233,14 @@ input[type="reset"] {
     font-size: 1.1rem;
     border-color: var(--text);
     min-width: 300px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+    background-color: var(--text);
+    color: var(--side-bg);
+    border-color: var(--side-bg)
 }
 
 option,
