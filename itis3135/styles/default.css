@@ -107,6 +107,7 @@ header h1 {
     display: table;
     background-color: var(--nav-bg);
 }
+
 /*
 .main-nav {
     height: 40px;
@@ -190,7 +191,7 @@ aside {
     width: 100px;
 }
 
-/* || Footer */ 
+/* || Footer */
 footer {
     background-color: var(--nav-bg);
     width: 100%;
@@ -293,6 +294,95 @@ form {
 
 ::placeholder {
     color: var(--text);
+}
+
+/* || Calculator */
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 400px;
+    margin-left: 23.5%;
+}
+
+.calculator__display {
+    width: 100%;
+    font-size: 3.5rem;
+    border: none;
+    background-color: var(--nav-bg);
+    color: var(--text);
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+button {
+    height: 60px;
+    border-radius: 3px;
+    border: 1px solid var(--side-bg);
+    font-size: 2rem;
+    background-color: var(--side-bg);
+    color: var(--text);
+    border-color: var(--text);
+}
+
+button:hover {
+    background-color: var(--text);
+    color: var(--side-bg);
+    border-color: var(--side-bg);
+}
+
+
+.key--operator {
+    color: #eaebff;
+    background-color: var(--nav-bg);
+}
+
+.all-clear {
+    background-color: #f25359;
+    border-color: #b63337;
+    color: #fff;
+}
+
+.all-clear:hover {
+    background-color: #ec696e;
+}
+
+.equal-sign {
+    background-color: #2985c2;
+    border-color: #2f7bad;
+    color: #fff;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    height: 100%;
+}
+
+.equal-sign:hover {
+    background-color: #4698ce;
+}
+
+.calculator__keys {
+    --gap: 6px;
+    --num-cols: 4;
+
+    text-align: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    gap: var(--gap);
+}
+
+.calculator-coulmn-2 {
+    grid-column: span 2;
+}
+
+.calculator-row-2 {
+    grid-row: span 2;
 }
 
 /* || Utilities */
