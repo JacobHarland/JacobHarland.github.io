@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles/default.css" />
+  <title>Jacob Harland's Jolly Hydra &#128126; ITIS3135 &#128126; Arrays</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div data-include="components/nav.html"></div>
+    <div class="flex">
+      <aside>
+        <div data-include="components/sidebar.html"></div>
+      </aside>
+      <main>
+        <h2>Arrays</h2>
+        <p>
+          I was a bit confused on the instructions for this assignment. It said to create empty arrays and dropdowns,
+          but I don't know how to validate that for an empty input when it is just taking data from a dropdown. I also
+          did not know where to put the values for the salary so I just tried my best.
+        </p>
+        <p>Steps for use:</p>
+        <ol>Select a name from the dropdown</ol>
+        <ol>Click the add salary button to add this user to the array</ol>
+        <ol>Display Result displays the highest salary as well as the average salary</ol>
+        <ol>Display Salary shows a table with all of the users and their salary </ol>
+
+        <button type="submit" id="add-salary">Add Salary</button>
+        <button type="submit" id="display-results">Display Results</button>
+        <button type="submit" id="display-salary">Display Salary</button>
+
+        <select id="names">
+          <option value="John 10000">John</option>
+          <option value="Jacob 20000">Jacob</option>
+          <option value="Jingleheimer 30000">Jingleheimer</option>
+          <option value="Schmidt 50000">Schmidt</option>
+        </select>
+
+        <div id="results">
+          <p id="largest"></p>
+          <p id="average"></p>
+        </div>
+
+        <figure>
+          <table id="results_table">
+
+          </table>
+        </figure>
+
+      </main>
+
+    </div>
+    <div data-include="components/footer.html"></div>
+  </div>
+
+  <script src="scripts/HTMLInclude.min.js"></script>
+  <script src="scripts/arrays.js" defer></script>
+</body>
+
+</html>
