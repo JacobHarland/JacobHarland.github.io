@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="Description" content="Testing website for accessibility.">
+
+  <!-- css -->
+  <link rel="stylesheet" href="Harland_Activity_Accessibility.css">
+  <title>Test For Accessibility</title>
+
+</head>
+
+<body>
+  <header>
+  </header>
+  <main>
+    <h1>Candle Delight</h1>
+    <table class="center">
+
+      <caption>Candles</caption>
+      <thead>
+        <tr>
+          <!-- identify table headers <th> with scope attribute -->
+          <th scope="col">TYPE</th>
+          <th scope="col">PRODUCT</th>
+          <th scope="col">FEATURES</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Birthday Candles</th>
+          <td><img src="images/Birthday-Candles.jpg" alt="Picture of cake with candles that spell out Happy Birthday">
+          </td>
+          <td>
+            <ol>
+              Comes in a range of fun, vibrant colors
+            </ol>
+            <ol>
+              Small and slender forms allow you to add as many or as few of them as you desire
+            </ol>
+            <ol>
+              Offers a way to personalize customers' desserts on birthday parties and anniversaries
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Voltives</th>
+          <td><img src="images/voltives.jpeg" alt="Picture of a candle in a jar"></td>
+          <td>
+            <ol>
+              Inexpensive and easy to use
+            </ol>
+            <ol>
+              Bigger than tea lights to provide longer burn times, making them better for longer events
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Taper Candles</th>
+          <td><img src="images/taper-candles.jpg" alt="Picture of long skinny candles"></td>
+          <td>
+            <ol>
+              Commonly known as window candles
+            </ol>
+            <ol>
+              Long, slender constructions add dimensions to table tops
+            </ol>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!--Add the form here-->
+    <form action="#">
+      <header>Enter your name and phone number to win a gift!</header>
+      <label>Name: <input type="text" autocomplete="name"></label>
+      <label>Phone Number: <input type="text" autocomplete="tel" aria-required="true"></label>
+      <button formaction="#">Submit</button>
+    </form>
+
+    <div class="whitespace"></div>
+    <a href="https://teachaccess.github.io/tutorial/#/12">Click here to find more about accessibility</a>
+    <div class="whitespace"></div>
+
+    <a href="https://dequeuniversity.com/rules/axe/3.2/color-contrast"> Find out if your font
+      color and background color passes WCAG standard!</a>
+  </main>
+
+  <footer>
+    <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+      <img src="images/button-validation-html5.png" width="88" height="31" alt="Validate webpage HTML.">
+    </a>
+
+    <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+      <img src="images/button-validation-css.png" width="88" height="31" alt="Validate webpage CSS.">
+    </a>
+
+    <script>
+      document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+      document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+  </footer>
+</body>
+
+</html>
