@@ -5,27 +5,27 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="styles/default.css" />
+  <link rel="stylesheet" type="text/css" href="styles/default.css">
   <title>Jacob Harland's Jolly Hydra &#128126; ITIS3135 &#128126; First JavaScripts</title>
   <script src="scripts/default.js"></script>
   <script src="scripts/defaultscripts.js"></script>
 </head>
 
-<body>
+<body onload="getTodaysDate()">
 
   <div class="container">
-    <div data-include="components/nav.html"></div>
+    <div data-include="components/header.html"></div>
     <div class="flex">
       <aside>
         <div data-include="components/sidebar.html"></div>
       </aside>
       <main>
         <h2>First JavaScripts</h2>
-        <h3 id="time"></h3>
-        <h3 id="greeting"></h3>
+        <h3 id="time">Time loading</h3>
+        <h3 id="greeting">Greeting not entered</h3>
 
         <form>
-          <fieldset><input type="button" onclick="myAlert()" value="ALERT BUTTON"></fieldset>
+          <fieldset><button type="button" onclick="myAlert()">ALERT BUTTON</button></fieldset>
           <fieldset>
             <label for="fullName">Enter your name:
               <input id="fullName" name="fullName" type="text" placeholder="John Doe" autocomplete="off" required>
@@ -34,18 +34,18 @@
               <input id="feeling" name="feeling" type="text" placeholder="Best I've ever been!" autocomplete="off"
                 required>
             </label>
-            <input type="button" value="Submit" id="submit" onclick="myGreeting()" />
+            <input type="button" value="Submit" id="submit" onclick="promptUser()">
           </fieldset>
 
           <fieldset>
-            <input type="button" value="Celsius To Fahrenheit Calculator" onclick="celsiusToFahrenheit()" />
+            <input type="button" value="Celsius To Fahrenheit Calculator" onclick="celsiusToFahrenheit()">
           </fieldset>
 
           <fieldset>
             <label for="hydraHeads">Enter the number of heads you will cut off the hydra!
               <input id="hydraHeads" name="hydraHeads" type="text" autocomplete="off" required>
             </label>
-            <input type="button" value="Slay the HYDRAAAA" id="slayHydra" onclick="myHydraHeads()" />
+            <input type="button" value="Slay the HYDRAAAA" id="slayHydra" onclick="myHydraHeads()">
             <p id="HydraHeadsOutput"></p>
           </fieldset>
 
@@ -56,7 +56,7 @@
             <label for="width">Enter width:
               <input id="width" name="width" type="text" placeholder="10" autocomplete="off" required>
             </label>
-            <input type="button" value="Find the area of a rectangle" onclick="areaFinder()" />
+            <input type="button" value="Find the area of a rectangle" onclick="areaFinder()">
             <p id="area"></p>
           </fieldset>
 

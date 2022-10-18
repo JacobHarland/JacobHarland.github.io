@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="styles/default.css" />
+  <link rel="stylesheet" type="text/css" href="styles/default.css">
   <title>Jacob Harland's Jolly Hydra &#128126; ITIS3135 &#128126; Form</title>
   <script src="scripts/default.js"></script>
 </head>
@@ -15,7 +15,7 @@
 
   <div class="container">
 
-    <div data-include="components/nav.html"></div>
+    <div data-include="components/header.html"></div>
 
     <div class="flex">
       <aside>
@@ -27,16 +27,16 @@
         <form>
           <fieldset>
             <label for="name">Enter Your Full Name: <input id="name" name="name" type="text" placeholder="John Doe"
-                autocomplete="off" required /></label>
+                autocomplete="off" required></label>
             <label for="phonenumber">Enter Your Phone Number<input id="phonenumber" type="tel"
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="(123)-456-7890" autocomplete="off" required /></label>
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="(123)-456-7890" autocomplete="off" required></label>
             <label for="email">Enter Your Email: <input id="email" name="email" type="email"
-                placeholder="Johndoe@email.com" autocomplete="off" required /></label>
+                placeholder="Johndoe@email.com" autocomplete="off" required></label>
           </fieldset>
           <fieldset>
-            <label for="radio"><input id="radio" name="radio" type="radio" class="inline"> Sketch</label>
-            <label for="radio"><input id="radio" name="radio" type="radio" class="inline"> Full drawing</label>
-            <label for="radio"><input id="radio" name="radio" type="radio" class="inline"> Full drawing + color</label>
+            <label for="sketch"><input id="sketch" name="radio" type="radio" class="inline"> Sketch</label>
+            <label for="fulldrawing"><input id="fulldrawing" name="radio" type="radio" class="inline"> Full drawing</label>
+            <label for="fullcolor"><input id="fullcolor" name="radio" type="radio" class="inline"> Full drawing + color</label>
             <label for="select">Size <select name="select" id="select" required>
                 <option value="">Select One</option>
                 <option value="1">10" x 8"</option>
@@ -46,13 +46,13 @@
               </select></label>
           </fieldset>
           <fieldset>
-            <label for="checkbox"><input id="checkbox" name="checkbox" type="checkbox" required class="inline"> Agree to
+            <label><input name="checkbox" type="checkbox" required class="inline"> Agree to
               my rights to use your drawing as advertisment?</label>
-            <label for="checkbox"> <input id="checkbox" name="checkbox" type="checkbox" class="inline"> Subscribe to
+            <label><input name="checkbox" type="checkbox" class="inline"> Subscribe to
               newsletter?</label>
           </fieldset>
-          <input type="reset" value="Reset" />
-          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset">
+          <input type="submit" value="Submit">
         </form>
 
       </main>

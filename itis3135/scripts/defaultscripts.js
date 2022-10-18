@@ -2,7 +2,7 @@ function myAlert() {
     alert("This is an alert!");
 }
 
-function myGreeting() {
+function promptUser() {
     let fullName = document.getElementById("fullName").value;
     let feeling = document.getElementById("feeling").value;
     document.getElementById('greeting').innerHTML = `The Jolly Hydra welcomes you, ${fullName} !
@@ -30,13 +30,24 @@ function areaFinder() {
     document.getElementById('area').innerHTML = `Area: ${length * width} !`;
 }
 
-let a;
-let time;
-let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-setInterval(() => {
-    a = new Date();
-    time = 'Today Is ' + a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds() + ' on ' + days[a.getDay()] + ', ' + a.getDay() + ' ' + months[a.getMonth()] + ", " + a.getFullYear();
-    document.getElementById('time').innerHTML = time;
-}, 1000);
+function getTodaysDate() {
+    let a;
+    let time;
+    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    setInterval(() => {
+        a = new Date();
+        time = 'Today Is ' + a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds() + ' on ' + days[a.getDay()] + ', ' + a.getDay() + ' ' + months[a.getMonth()] + ", " + a.getFullYear();
+        document.getElementById('time').innerHTML = time;
+    }, 1000);
+}
+// let a;
+// let time;
+// let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+// let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+// setInterval(() => {
+//     a = new Date();
+//     time = 'Today Is ' + a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds() + ' on ' + days[a.getDay()] + ', ' + a.getDay() + ' ' + months[a.getMonth()] + ", " + a.getFullYear();
+//     document.getElementById('time').innerHTML = time;
+// }, 1000);
 
