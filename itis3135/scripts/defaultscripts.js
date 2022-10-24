@@ -37,7 +37,7 @@ function getTodaysDate() {
     let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
     setInterval(() => {
         a = new Date();
-        time = 'Today Is ' + a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds() + ' on ' + days[a.getDay()] + ', ' + a.getDay() + ' ' + months[a.getMonth()] + ", " + a.getFullYear();
+        time = 'Today Is ' + a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds() + ' on ' + days[a.getDay()] + ', ' + a.getDate() + ' ' + months[a.getMonth()] + ", " + a.getFullYear();
         document.getElementById('time').innerHTML = time;
     }, 1000);
 }
