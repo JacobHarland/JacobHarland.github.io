@@ -23,10 +23,11 @@
 
     footer {
       width: 100%;
-      bottom: 0%;
       position: absolute;
       padding: 10px 20px;
       text-align: center;
+      align-self: auto;
+      margin-top: 80px;
     }
 
     footer a {
@@ -83,6 +84,9 @@
     main {
       padding-left: 150px;
       padding-right: 150px;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      min-height: 100vh;
     }
 
     main section {
@@ -93,12 +97,32 @@
       box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
     }
 
-    main section .page {
+    main section {
       display: none
     }
 
-    main section .page.is-active {
+    main section.is-active {
       display: block;
+    }
+
+    main img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 30%;
+      padding: 20px;
+    }
+
+    table {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    th,
+    td {
+      border: 1px solid;
+      padding-left: 5px;
+      padding-right: 15px;
     }
   </style>
 </head>
@@ -107,54 +131,184 @@
   <header>
     <nav>
       <h1>Hobby Midterm</h1>
-      <ul class="tabs">
-        <li class="tab is-active">
+      <ul>
+        <li class="is-active">
           <a data-switcher data-tab="1">Home</a>
         </li>
-        <li class="tab">
-          <a data-switcher data-tab="2">About</a>
+        <li>
+          <a data-switcher data-tab="2">Montana</a>
         </li>
-        <li class="tab">
-          <a data-switcher data-tab="3">Services</a>
+        <li>
+          <a data-switcher data-tab="3">Oliver</a>
         </li>
-        <li class="tab">
-          <a data-switcher data-tab="4">Contact</a>
+        <li>
+          <a data-switcher data-tab="4">Bella</a>
+        </li>
+        <li>
+          <a data-switcher data-tab="5">Finn</a>
         </li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="pages">
-      <div class="page is-active" data-page="1">
-        <h2>Page 1</h2>
-        <p>Welcome to the home page</p>
-      </div>
-      <div class="page" data-page="2">
-        <h2>Page 2</h2>
-        <p>Welcome to the about page</p>
-      </div>
-      <div class="page" data-page="3">
-        <h2>Page 3</h2>
-        <p>Welcome to the services page</p>
-      </div>
-      <div class="page" data-page="4">
-        <h2>Page 4</h2>
-        <p>Welcome to the contact page</p>
-      </div>
+    <section class="is-active" data-page="1">
+      <h2>Home</h2>
+      <img src="" alt="">
+      <p>Welcome to my pet page! This is for the midterm project of ITIS3135. Please use the navbar above to take a look
+        at my beautiful babies!</p>
+      <img src="images/babymomma.jpg" alt="mom cat">
+      <p>Each page will provide a picture of the animal, a brief description as well as a table so you can compare their
+        traits!!!</p>
+
+    </section>
+    <section data-page="2">
+      <h2>Montana</h2>
+      <p>Montana is an Australian Shepard. Montana loves taking you for the longest walk possible. She also loves to
+        zoom around and run with other dogs at the dog park. Her favorite toy is her lamby and she sleeps with it every
+        night too</p>
+      <img src="images/montana.jpg" alt="dog">
+
+      <table>
+        <tr>
+          <td>Breed</td>
+          <td>Australian Shepard</td>
+        </tr>
+        <tr>
+          <td>Age</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>Owner</td>
+          <td>Brother</td>
+        </tr>
+        <tr>
+          <td>Eating Habits</td>
+          <td>Nibbles at food</td>
+        </tr>
+        <tr>
+          <td>Favorite Toy</td>
+          <td>Lamby</td>
+        </tr>
+        <tr>
+          <td>Personality</td>
+          <td>Oddly Human</td>
+        </tr>
+      </table>
+    </section>
+    <section data-page="3">
+      <h2>Oliver</h2>
+      <p>Oliver was a rescue cat we found a few years ago. We found him in a dumpster looking for food. We brought him
+        in and instantly fell in love with him! It took him awhile to acclimate to living in a house, every meal he
+        thought was his last so he scarfed it down as fast as possible and was constantly looking for more food.
+        Eventually he realized he will be here with us forever and became much more of a healthy eater and loves
+        cuddling now!</p>
+      <img src="images/oliver.jpg" alt="cat">
+      <table>
+        <tr>
+          <td>Breed</td>
+          <td>Tabby</td>
+        </tr>
+        <tr>
+          <td>Age</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <td>Owner</td>
+          <td>Me</td>
+        </tr>
+        <tr>
+          <td>Eating Habits</td>
+          <td>Polite but adventurous</td>
+        </tr>
+        <tr>
+          <td>Favorite Toy</td>
+          <td>Cat tower</td>
+        </tr>
+        <tr>
+          <td>Personality</td>
+          <td>Cuddle Boi</td>
+        </tr>
+      </table>
+    </section>
+    <section data-page="4">
+      <h2>Bella</h2>
+      <p>We got Bella a few years ago and she is a very interesting dog. She needs some more training as she loves to
+        beg for food as we are eating, so we normally put her in another room. She also gets allergies which is why she
+        looks like she does in the picture. She also LOVES her back being scratched, she will often find ways to scratch
+        it herself. She walks underneath chairs or low tables and rubs her back against them. She's also terrified of
+        thunder and fireworks. Her favorite sleeping position is underneath the covers by your feet.</p>
+      <img src="images/bella.jpg" alt="dog">
+      <table>
+        <tr>
+          <td>Breed</td>
+          <td>Shih Tzu Mix</td>
+        </tr>
+        <tr>
+          <td>Age</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>Owner</td>
+          <td>Girlfriend</td>
+        </tr>
+        <tr>
+          <td>Eating Habits</td>
+          <td>Begger</td>
+        </tr>
+        <tr>
+          <td>Favorite Toy</td>
+          <td>Small tables</td>
+        </tr>
+        <tr>
+          <td>Personality</td>
+          <td>Leg Warmer</td>
+        </tr>
+      </table>
+    </section>
+    <section data-page="5">
+      <h2>Finn</h2>
+      <p>Finn is a chonker. He likes to be lazy, shed, sleep and eat.</p>
+      <img src="images/finn.jpg" alt="cat">
+      <table>
+        <tr>
+          <td>Breed</td>
+          <td>White Cat</td>
+        </tr>
+        <tr>
+          <td>Age</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>Owner</td>
+          <td>Me</td>
+        </tr>
+        <tr>
+          <td>Eating Habits</td>
+          <td>All the food</td>
+        </tr>
+        <tr>
+          <td>Favorite Toy</td>
+          <td>Food</td>
+        </tr>
+        <tr>
+          <td>Personality</td>
+          <td>Sloth</td>
+        </tr>
+      </table>
     </section>
   </main>
 
   <footer>
     <p>
-      Designed by <a href="harland.art/">HarlandArt</a> &copy; 2022
+      Designed by <a href="/itis3135/harland.art/">HarlandArt</a> &copy; 2022
     </p>
     <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
-      <img src="images/button-validation-html5.png" width="88" height="31" alt="Validate webpage HTML.">
+      <img src="images/button-validation-html5.png" width="78" height="25" alt="Validate webpage HTML.">
     </a>
 
     <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
-      <img src="images/button-validation-css.png" width="88" height="31" alt="Validate webpage CSS.">
+      <img src="images/button-validation-css.png" width="78" height="25" alt="Validate webpage CSS.">
     </a>
   </footer>
 
@@ -171,7 +325,7 @@
 
         // adds and removes the is-active class
         tab_switcher.addEventListener('click', () => {
-          document.querySelector('.tabs .tab.is-active').classList.remove('is-active');
+          document.querySelector('nav ul li.is-active').classList.remove('is-active');
           tab_switcher.parentNode.classList.add('is-active');
 
           SwitchPage(page_id);
@@ -181,13 +335,15 @@
 
     // displays whichever page is-active, all pages are hidden through css unless is-active
     function SwitchPage(page_id) {
-      const current_page = document.querySelector('main section div.is-active');
+      const current_page = document.querySelector('main section.is-active');
       current_page.classList.remove('is-active');
 
-      const next_page = document.querySelector(`main section div[data-page="${page_id}"]`);
+      const next_page = document.querySelector(`main section[data-page="${page_id}"]`);
       next_page.classList.add('is-active')
     }
 
+    document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+    document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
   </script>
 </body>
 
