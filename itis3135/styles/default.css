@@ -416,6 +416,44 @@ button:hover {
     grid-row: span 2;
 }
 
+/* || Slideshow */
+.slider-inner {
+    width: 608px;
+    height: 408px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    padding: 3px;
+    border: var(--nav-bg) solid 1px;
+}
+
+.slider-inner img {
+    display: none;
+    width: 600px;
+    height: 400px;
+}
+
+.slider-inner img.active {
+    display: inline-block;
+}
+
+.prev, .next {
+    float: left;
+    margin-top: 180px;
+    cursor: pointer;
+}
+
+.prev {
+    position: relative;
+    margin-right: -30px;
+    z-index: 100;
+}
+
+.next {
+    position: relative;
+    margin-left: -30px;
+    z-index: 100;
+}
 /* || Utilities */
 @media (max-width: 767px) {
     aside {
