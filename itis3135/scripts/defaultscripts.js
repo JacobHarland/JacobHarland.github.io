@@ -1,7 +1,3 @@
-$("p").bind("click", function(){
-    $( "This is a click Event").appendTo( "body" );
-});
-
 function myAlert() {
     alert("This is an alert!");
 }
