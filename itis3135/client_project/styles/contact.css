@@ -1,0 +1,67 @@
+:root {
+    --background-color: #f7f8f2;
+    --text-color: #7D5F6D;
+    --link-color: fff;
+    --green-one: #9DBF9E;
+    --green-two: #B7CBAA;
+    --green-three: #D0D6B5;
+    --pink-one: #F9B5AC;
+    --pink-two: #fbc5be;
+    --main-color: #7D5F6D;
+    --purple-two: #eee1e7;
+    --head-color: #fbc5be;
+}
+
+form {
+    width: 340px;
+    height: 440px;
+    background: var(--purple-two);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    margin: auto;
+    margin-top: 80px;
+    max-width: calc(100vw - 40px);
+    box-sizing: border-box;
+    position: relative;
+    padding: 50px 30px;
+    border-radius: 10px;
+
+}
+
+h3 {
+    margin: 10px 0;
+    padding-bottom: 10px;
+    width: 180px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    transition: all .3s;
+    border-bottom: 2px solid var(--green-three);
+    margin-bottom: 20px;
+}
+
+input:focus {
+    border-bottom: 2px solid var(--green-two)
+}
+
+button {
+    float: right;
+    padding: 8px 12px;
+    margin: 8px 0 0;
+    border: 2px solid var(--head-color);
+    background: 0;
+    color: var(--main-color);
+    cursor: pointer;
+    transition: all .3s
+}
+
+button:hover {
+    background: var(--main-color);
+    color: var(--head-color)
+}

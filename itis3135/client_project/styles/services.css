@@ -1,0 +1,40 @@
+
+* {
+    transition: .2s linear;
+}
+
+body h2{
+    text-align: center;
+    padding-top: 15px;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 50px;
+}
+
+body main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap:15px;
+}
+
+body main section{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    text-align: center;
+    padding:30px 20px;
+    transition-duration: 0.2s linear;
+}
+
+body main section h3{
+    font-size: 22px;
+    padding:10px 0;
+}
+
+body main section p{
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+body main section:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+}
