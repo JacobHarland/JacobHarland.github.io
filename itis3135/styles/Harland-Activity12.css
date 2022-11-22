@@ -1,0 +1,15 @@
+#activity12 {
+	background: #dfe3e6 url('images/bullet.gif') no-repeat 7px center;
+	margin: 0;
+	padding: 3px 0 3px 25px;
+	border: solid green 1px;
+	color: green;
+}
+.bx-wrapper {
+	margin-bottom: 40px;
+}
+#id_pager {
+	text-align: center;
+	font-size: 90%;
+	color: green;
+}
