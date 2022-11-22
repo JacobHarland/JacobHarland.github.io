@@ -42,8 +42,8 @@ function getTodaysDate() {
     }, 1000);
 }
 
-$(document).ready(function() {
-    $('.next').on('click', function() {
+$(document).ready(function () {
+    $('.next').on('click', function () {
         console.log('clicked')
         var currentImg = $('.active')
         var nextImg = currentImg.next();
@@ -54,7 +54,7 @@ $(document).ready(function() {
         }
     })
 
-    $('.prev').on('click', function() {
+    $('.prev').on('click', function () {
         console.log('clicked')
         var currentImg = $('.active')
         var prevImg = currentImg.prev();
@@ -66,4 +66,7 @@ $(document).ready(function() {
     })
 });
 
+$(function () {
+    $("#accordion").accordion();
+});
 
