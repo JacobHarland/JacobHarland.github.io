@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="styles/default.css">
   <title>Kate's petsitting faq</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 </head>
 
 <body>
@@ -15,10 +18,7 @@
     <h2>FAQ</h2>
 
     <section>
-      <h3>TODO: Add JS in next sprint, question with answer inside a dropdown</h3>
-      <br>
-
-      <dl>
+      <div id="accordion">
         <dt>What are your payment methods?</dt>
         <dd>I accept cash, checks, venmo, and many other forms of online payment tools. Tell me what works best for you!
         </dd>
@@ -37,13 +37,14 @@
         <dt>What do you mean by “in-home pet sitting”?</dt>
         <dd>If you would like someone to stay with your pets overnight or longer, we can make an arrangement for me to
           stay overnight with your pets.</dd>
-        
+
         <dt>Are you comfortable with birds and/or other types of pets?</dt>
-        <dd>Yup!  I have taken care of parrots, guinea pigs, bearded dragons, and fish!</dd>
+        <dd>Yup! I have taken care of parrots, guinea pigs, bearded dragons, and fish!</dd>
 
         <dt>Can you send me pictures while we're away?</dt>
-        <dd>It would be my pleasure!  No one can resist a good pet selfie!</dd>
-      </dl>
+        <dd>It would be my pleasure! No one can resist a good pet selfie!</dd>
+      </div>
+
     </section>
   </main>
   <div data-include="components/footer.html"></div>
