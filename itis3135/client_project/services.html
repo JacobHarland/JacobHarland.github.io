@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="styles/default.css">
   <link rel="stylesheet" type="text/css" href="styles/services.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <title>Kate's petsitting services</title>
 </head>
 
@@ -19,23 +20,32 @@
       <p>
         I offer walks! I'll make sure your dog is exercised and has time to do their doggy business!
       </p>
+      <button id="dog-walking-button">Click for pricing/availability</button>
+      <div id="dog-walking"></div>
     </section>
+
     <section>
       <h3>In Home Pet Sitting</h3>
       <p>
-        I will stay the night with your pet to give them maximum comfort while you enjoy your time away from home! 
+        I will stay the night with your pet to give them comfort while you enjoy your time away from home! 
       </p>
+      <button id="pet-sitting-button">Click for pricing/availability</button>
+      <div id="pet-sitting"></div>
     </section>
+
     <section>
       <h3>Check-ins</h3>
       <p>
         I will check up on your pet to make sure they are okay and well fed!
       </p>
+      <button id="check-in-button">Click for pricing/availability</button>
+      <div id="check-in"></div>
     </section>
     
   </main>
   <div data-include="components/footer.html"></div>
   <script src="scripts/HTMLInclude.min.js"></script>
+  <script src="scripts/services.js" defer></script>
   <script src="scripts/default.js" defer></script>
 </body>
 

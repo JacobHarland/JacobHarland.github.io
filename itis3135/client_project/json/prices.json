@@ -1,0 +1,14 @@
+[
+    {
+        "price":"$10 per walk",
+        "availability":"7 days a week, excluding holidays"
+    },
+    {
+        "price":"$100 per day or $50 for night only",
+        "availability":"Monday-Friday, excluding holidays"
+    },
+    {
+        "price":"Varies based on animal",
+        "availability":"7 days a week, excluding holidays"
+    }
+]

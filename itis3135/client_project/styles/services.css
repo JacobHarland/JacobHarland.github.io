@@ -38,3 +38,9 @@ body main section:hover{
     box-shadow: 0 10px 15px rgba(0,0,0,.3);
     transform: scale(1.03);
 }
+
+body main section ul li {
+    text-align: left;
+    text-decoration: none;
+    list-style: none;
+}
